@@ -1,1 +1,2 @@
 component: rabbitmq
+secrets: "{{ lookup('hashi_vault', 'secret=Roboshop-{{env}}/data/rabbitmq token={{vault_token}} url=https://vault.sydevops80.online:8200 validate_certs=false')}}"

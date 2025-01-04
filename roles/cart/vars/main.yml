@@ -1,3 +1,4 @@
 component: cart
 app_path: /app
+secrets: "{{ lookup('hashi_vault', 'secret=Roboshop-{{env}}/data/cart token={{vault_token}} url=https://vault.sydevops80.online:8200 validate_certs=false')}}"
 
