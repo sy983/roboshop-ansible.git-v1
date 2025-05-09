@@ -6,7 +6,7 @@
     ports:
       - "80:80"
     env:
-      CATALOGUE_HOST:  "{{ secrets.CATALOGUE_HOST }} "
+      CATALOGUE_HOST:  "{{ secrets.CATALOGUE_HOST }}"
       CATALOGUE_PORT:   "{{ secrets.CATALOGUE_PORT }}"
       USER_HOST:  "{{ secrets.USER_HOST }}"
       USER_PORT:  "{{ secrets.USER_PORT }}"
