@@ -8,8 +8,8 @@
     env:
       CATALOGUE_HOST:  "{{ secrets.CATALOGUE_HOST }} "
       CATALOGUE_PORT:   "{{ secrets.CATALOGUE_PORT }}"
-      USER_HOST:  " {{ secrets.USER_HOST }}"
-      USER_PORT:  " {{ secrets.USER_PORT }}"
+      USER_HOST:  "{{ secrets.USER_HOST }}"
+      USER_PORT:  "{{ secrets.USER_PORT }}"
       CART_HOST:   "{{ secrets.CART_HOST }}"
       CART_PORT:   "{{ secrets.CART_PORT }}"
       SHIPPING_HOST:   "{{ secrets.SHIPPING_HOST }}"
