@@ -1,4 +1,4 @@
 app_path: /usr/share/nginx/html
 component: frontend
 
-secrets: "{{ lookup('hashi_vault', 'secret=Roboshop-{{env}}/data/frontend token={{vault_token}} url=https://vault.sydevops80.online:8200 validate_certs=false')}}"
+secrets: "{{ lookup('hashi_vault', 'secret=Roboshop-{{env}}/data/frontend token={{vault_token}} url=https://vault.sy80devops.online:8200 validate_certs=false')}}"

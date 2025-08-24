@@ -6,5 +6,5 @@ schema_files:
   - master-data
   - app-user
 
-secrets: "{{ lookup('hashi_vault', 'secret=Roboshop-{{env}}/data/shipping token={{vault_token}} url=https://vault.sydevops80.online:8200 validate_certs=false')}}"
+secrets: "{{ lookup('hashi_vault', 'secret=Roboshop-{{env}}/data/shipping token={{vault_token}} url=https://vault.sy80devops.online:8200 validate_certs=false')}}"
 
