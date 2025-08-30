@@ -24,8 +24,7 @@
         state: latest
 
     - name: load Master data
-      ansible.builtin.shell: mysql -h mysql.{{ env }}.sy80devops.online -uroot -p{{ secrets.MYSQL_ROOT_PASSWORD }} <
-      /app/db/{{ item }}.sql
+      ansible.builtin.shell: mysql -h mysql.{{ env }}.sy80devops.online -uroot -p{{ secrets.MYSQL_ROOT_PASSWORD }} < /app/db/{{ item }}.sql
       loop: "{{ schema_files }}"
 
 
