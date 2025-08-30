@@ -22,17 +22,12 @@
 - name: load schemma
   ansible.builtin.include_role:
     name: common
-    tasks_from: schema
+    tasks_from: schema.yml
   when: schema_setup is defined
 
 
 - name: start systemd
   ansible.builtin.include_role:
-    name: common
+    name: commong
     tasks_from: systemd
-
-
-
-
-  
 
