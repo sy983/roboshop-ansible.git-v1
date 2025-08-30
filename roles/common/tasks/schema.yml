@@ -16,7 +16,7 @@
       loop: "{{ schema_files }}"
 
 - name: Load mysql Schema
-  when: schema_setup == "mysql"
+  when: schema_setup == "mysql"'
   block:
     - name:  Install MySQL Client
       ansible.builtin.dnf:
