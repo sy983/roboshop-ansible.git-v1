@@ -14,4 +14,4 @@
     enabled: yes
 
 - name: Create user rabbitmq app
-  ansible.builtin.shell: rabbitmqctl add_user {{ secrets.AMQP_USER }} {{ secrets.AMQP_PASSWORD }}; rabbitmqctl set_permissions -p / roboshop ".*" ".*" ".*"
+  ansible.builtin.shell: rabbitmqctl add_user {{ secrets.AMQP_USER }} {{ secrets.AMQP_PASS }}; rabbitmqctl set_permissions -p / roboshop ".*" ".*" ".*"
